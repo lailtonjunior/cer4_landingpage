@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-apae-bg text-black antialiased selection:bg-apae-blue selection:text-white;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-md border border-black/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.08)];
+  }
+}
