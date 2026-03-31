@@ -1,31 +1,37 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { UserPlus, Stethoscope, ActivitySquare, ShieldCheck } from "lucide-react";
+import Image from "next/image";
 import clsx from "clsx";
 
 const journeySteps = [
   {
-    icon: UserPlus,
+    iconSrc: "/icons/3d/folder.png",
     title: "1. Cadastro Único",
     desc: "Acolhimento via regulação e registro digital no sistema para garantir rastreabilidade do cidadão.",
     color: "bg-apae-blue",
   },
   {
-    icon: Stethoscope,
+    iconSrc: "/icons/3d/stethoscope.png",
     title: "2. Triagem Multiprofissional",
     desc: "Avaliação global para identificar as necessidades de saúde e traçar o PTS adequado.",
     color: "bg-apae-yellow",
   },
   {
-    icon: ActivitySquare,
+    iconSrc: "/icons/3d/syringe.png",
     title: "3. Atendimento Especializado",
     desc: "Intervenção terapêutica rigorosa, com recursos tecnológicos visando autonomia.",
     color: "bg-apae-green",
   },
   {
-    icon: ShieldCheck,
-    title: "4. Acompanhamento",
+    iconSrc: "/icons/3d/magnifying_glass.png",
+    title: "4. Diagnóstico",
+    desc: "Avaliação minuciosa para identificação precisa de necessidades clínicas e mapeamento de espectros.",
+    color: "bg-orange-500",
+  },
+  {
+    iconSrc: "/icons/3d/shield.png",
+    title: "5. Acompanhamento",
     desc: "Monitoramento contínuo, interface familiar e articulação em rede do SUS.",
     color: "bg-apae-wine",
   }
@@ -41,7 +47,7 @@ export default function Timeline() {
           <p className="text-gray-600 max-w-2xl mx-auto">Com foco total na transparência, todo o fluxo do paciente no CER IV é monitorado e otimizado visando acesso ágil.</p>
         </div>
 
-        <div className="relative max-w-5xl mx-auto">
+        <div className="relative max-w-6xl mx-auto">
           {/* Animated SVG Line bridging all points */}
           <div className="hidden md:block absolute top-10 left-[10%] right-[10%] w-[80%] h-1 bg-gray-100 -translate-y-1/2 rounded-full z-0 overflow-hidden">
             <motion.div 
@@ -53,9 +59,8 @@ export default function Timeline() {
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 relative z-10">
             {journeySteps.map((step, i) => {
-              const Icon = step.icon;
               return (
                 <motion.div 
                   key={i}
@@ -65,8 +70,8 @@ export default function Timeline() {
                   transition={{ delay: i * 0.2, type: "spring" }}
                   className="flex flex-col items-center text-center group"
                 >
-                  <div className={clsx("w-20 h-20 rounded-full flex items-center justify-center mb-6 shadow-xl transition-transform duration-500 group-hover:scale-110", step.color)}>
-                    <Icon className="w-8 h-8 text-white" />
+                  <div className={clsx("w-20 h-20 rounded-full flex items-center justify-center mb-6 shadow-xl transition-transform duration-500 group-hover:scale-110 relative", step.color)}>
+                    <Image src={step.iconSrc} width={48} height={48} alt={step.title} className="object-contain drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
                   <p className="text-sm text-gray-600">{step.desc}</p>

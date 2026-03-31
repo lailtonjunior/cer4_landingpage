@@ -1,6 +1,6 @@
 "use client";
 
-import { Download, FileText, PieChart } from "lucide-react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Transparency() {
@@ -17,8 +17,8 @@ export default function Transparency() {
         
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-gray-200 pb-6">
           <div className="max-w-xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 flex items-center gap-3">
-              <PieChart className="text-apae-blue w-8 h-8"/> 
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 flex items-center gap-4">
+              <Image src="/icons/3d/pie_chart.png" width={48} height={48} alt="Gráfico" className="object-contain drop-shadow-md" />
               Portal de Transparência
             </h2>
             <p className="text-gray-600">
@@ -52,8 +52,8 @@ export default function Transparency() {
                     className="hover:bg-apae-blue/5 transition-colors group"
                   >
                     <td className="p-6 flex items-center gap-3 font-medium text-gray-900">
-                      <div className="w-10 h-10 rounded-lg bg-apae-blue/10 flex items-center justify-center text-apae-blue">
-                        <FileText className="w-5 h-5"/>
+                      <div className="w-12 h-12 flex items-center justify-center">
+                        <Image src="/icons/3d/folder.png" width={32} height={32} alt="Documento" className="object-contain drop-shadow-sm group-hover:scale-110 transition-transform" />
                       </div>
                       {doc.title}
                     </td>
@@ -64,8 +64,8 @@ export default function Transparency() {
                       </span>
                     </td>
                     <td className="p-6 text-right">
-                      <button className="text-apae-blue hover:text-apae-wine transition-colors p-2 hover:bg-apae-blue/10 rounded-full inline-flex items-center">
-                        <Download className="w-5 h-5" />
+                      <button className="transition-transform hover:-translate-y-1 p-2 rounded-full inline-flex items-center">
+                        <Image src="/icons/3d/download.png" width={28} height={28} alt="Download" className="object-contain drop-shadow-sm" />
                       </button>
                     </td>
                   </motion.tr>

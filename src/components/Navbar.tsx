@@ -41,7 +41,6 @@ export default function Navbar() {
             { label: "Modalidades", id: "modalidades" },
             { label: "Indicadores", id: "indicadores" },
             { label: "Jornada do Paciente", id: "jornada" },
-            { label: "Corpo Clínico", id: "equipe" },
             { label: "Transparência", id: "transparencia" },
           ].map((item) => (
             <a key={item.id} href={`#${item.id}`} className="text-sm font-medium text-gray-600 hover:text-apae-blue transition-colors relative group">
@@ -76,7 +75,6 @@ export default function Navbar() {
             { label: "Modalidades", id: "modalidades" },
             { label: "Indicadores", id: "indicadores" },
             { label: "Jornada do Paciente", id: "jornada" },
-            { label: "Corpo Clínico", id: "equipe" },
             { label: "Transparência", id: "transparencia" },
           ].map((item) => (
             <a key={item.id} href={`#${item.id}`} className="font-medium text-gray-700">{item.label}</a>

@@ -6,7 +6,6 @@ import KPIs from "@/components/KPIs";
 import Timeline from "@/components/Timeline";
 import Transparency from "@/components/Transparency";
 import Testimonials from "@/components/Testimonials";
-import Team from "@/components/Team";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
       <KPIs />
       <Timeline />
       {/* <Testimonials /> */}
-      <Team />
       <Transparency />
       <Footer />
     </main>
