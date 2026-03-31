@@ -12,7 +12,7 @@ const team = [
 
 export default function Team() {
   return (
-    <section className="py-24 bg-apae-bg relative">
+    <section id="equipe" className="py-24 bg-apae-bg relative">
       <div className="container mx-auto px-6">
         
         <div className="text-center mb-16">

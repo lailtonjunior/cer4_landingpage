@@ -45,10 +45,10 @@ export default function KPIs() {
   ];
 
   return (
-    <section className="py-20 bg-apae-wine relative overflow-hidden">
+    <section id="indicadores" className="py-20 bg-apae-green relative overflow-hidden">
       {/* Glow Effects */}
-      <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-apae-red/30 rounded-full blur-[100px] -translate-y-1/2 pointer-events-none"></div>
-      <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-apae-blue/20 rounded-full blur-[100px] -translate-y-1/2 pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-white/20 rounded-full blur-[100px] -translate-y-1/2 pointer-events-none"></div>
+      <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-[100px] -translate-y-1/2 pointer-events-none"></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 divide-x divide-white/10">

@@ -69,7 +69,7 @@ export default function Services() {
   };
 
   return (
-    <section id="servicos" className="py-24 bg-apae-bg relative">
+    <section id="modalidades" className="py-24 bg-apae-bg relative">
       <div className="container mx-auto px-6">
         
         <div className="text-center max-w-2xl mx-auto mb-16">

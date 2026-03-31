@@ -36,9 +36,16 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex flex-1 justify-center items-center gap-8">
-          {["Sobre o CER", "Modalidades", "Indicadores", "Transparência"].map((item) => (
-            <a key={item} href={`#${item.toLowerCase().replace(/ /g, "")}`} className="text-sm font-medium text-gray-600 hover:text-apae-blue transition-colors relative group">
-              {item}
+          {[
+            { label: "Sobre o CER", id: "sobre" },
+            { label: "Modalidades", id: "modalidades" },
+            { label: "Indicadores", id: "indicadores" },
+            { label: "Jornada do Paciente", id: "jornada" },
+            { label: "Corpo Clínico", id: "equipe" },
+            { label: "Transparência", id: "transparencia" },
+          ].map((item) => (
+            <a key={item.id} href={`#${item.id}`} className="text-sm font-medium text-gray-600 hover:text-apae-blue transition-colors relative group">
+              {item.label}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-apae-green transition-all group-hover:w-full"></span>
             </a>
           ))}
@@ -64,8 +71,15 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           className="md:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-gray-100 py-4 flex flex-col px-6 gap-4"
         >
-          {["Sobre o CER", "Modalidades", "Indicadores", "Transparência"].map((item) => (
-            <a key={item} href="#" className="font-medium text-gray-700">{item}</a>
+          {[
+            { label: "Sobre o CER", id: "sobre" },
+            { label: "Modalidades", id: "modalidades" },
+            { label: "Indicadores", id: "indicadores" },
+            { label: "Jornada do Paciente", id: "jornada" },
+            { label: "Corpo Clínico", id: "equipe" },
+            { label: "Transparência", id: "transparencia" },
+          ].map((item) => (
+            <a key={item.id} href={`#${item.id}`} className="font-medium text-gray-700">{item.label}</a>
           ))}
         </motion.div>
       )}

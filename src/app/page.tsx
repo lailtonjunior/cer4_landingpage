@@ -15,10 +15,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <KPIs />
       <Services />
+      <KPIs />
       <Timeline />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Team />
       <Transparency />
       <Footer />

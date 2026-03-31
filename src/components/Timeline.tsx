@@ -33,7 +33,7 @@ const journeySteps = [
 
 export default function Timeline() {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section id="jornada" className="py-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6">
         
         <div className="text-center mb-16">

@@ -45,6 +45,14 @@ export default function Footer() {
                 </div>
                 <span>contato@cercolinas.com.br</span>
               </div>
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-pink-500 shadow-sm">
+                  <Instagram className="w-4 h-4" />
+                </div>
+                <a href="https://www.instagram.com/cer4apaecolinas/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hover:underline">
+                  @cer4apaecolinas
+                </a>
+              </div>
             </div>
           </div>
 
@@ -74,7 +82,7 @@ export default function Footer() {
             © 2026 CER IV APAE Colinas. Todos os direitos reservados. Design em conformidade com "Viver sem Limites".
           </p>
           <div className="flex gap-4">
-            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-apae-blue transition-all">
+            <a href="https://www.instagram.com/cer4apaecolinas/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-apae-blue transition-all">
               <Instagram className="w-4 h-4" />
             </a>
             <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-apae-blue transition-all">

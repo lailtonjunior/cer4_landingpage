@@ -13,16 +13,6 @@ export default function Hero() {
       
       <div className="container mx-auto px-6 relative z-10 text-center md:text-left pt-20">
         <div className="max-w-3xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <span className="inline-block py-1 px-3 rounded-full bg-apae-blue/10 text-apae-blue text-sm font-semibold mb-6 tracking-wide uppercase">
-              Programa Viver sem Limites
-            </span>
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -53,7 +43,7 @@ export default function Hero() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="#servicos"
+              href="#modalidades"
               className="flex items-center justify-center gap-2 bg-apae-green text-white px-8 py-4 rounded-xl font-medium shadow-[0_8px_30px_rgb(0,200,0,0.3)] transition-all hover:shadow-[0_8px_30px_rgb(0,200,0,0.5)]"
             >
               Conheça os Serviços
